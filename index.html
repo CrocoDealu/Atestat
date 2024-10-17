@@ -89,23 +89,20 @@
         </div>
         <!-- Profile Image -->
         <div
-          class="-order-1 mx-auto tablet:col-start-1 tablet:row-start-1 tablet:ml-auto tablet:-mr-[32px] desktop:mr-0"
+                class="-order-1 mx-auto tablet:col-start-1 tablet:row-start-1 tablet:ml-auto tablet:-mr-[32px] desktop:mr-0"
         >
-          <picture>
-            <source
-              srcset="assets/images/IMG_3022.png"
-              media="(min-width: 1174px)"
-            />
-            <source
-              srcset="assets/images/IMG_3022.png"
-              media="(min-width: 768px)"
-            />
-            <img
-              class="h-[383px] w-[174px] tablet:h-[600px] tablet:w-[322px] desktop:h-[720px] desktop:w-[445px]"
-              src="./assets/images/IMG_3022.png"
-              alt=""
-            />
-          </picture>
+          <div class="flex items-center justify-center w-[174px] tablet:h-[600px] tablet:w-[230px] desktop:h-[720px] desktop:w-[445px] margin-mobile">
+            <picture class="profile-image">
+              <source srcset="assets/images/IMG_3022_desktop.png" media="(min-width: 1174px)" />
+              <source srcset="assets/images/IMG_3022_desktop.png" media="(min-width: 768px)" />
+              <img
+                      class=""
+                      src="assets/images/IMG_3022_desktop.png"
+                      alt=""
+              />
+            </picture>
+          </div>
+
         </div>
         <!-- Rings Background Pattern -->
         <div
@@ -120,13 +117,13 @@
         </div>
         <!-- Circle Background Pattern -->
         <div
-          class="absolute top-[254px] right-[-65px] z-10 tablet:top-auto tablet:bottom-0 desktop:bottom-[70px] desktop:right-[380px]"
+                class="circle-background absolute top-[254px] right-[-65px] -z-10 tablet:top-[335px] tablet:bottom-0 desktop:bottom-[70px] desktop:right-[380px] desktop:top-auto"
         >
           <img
-            src="assets/images/pattern-circle.svg"
-            width="129"
-            height="129"
-            alt=""
+                  src="assets/images/pattern-circle.svg"
+                  width="129"
+                  height="129"
+                  alt=""
           />
         </div>
       </section>
